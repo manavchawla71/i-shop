@@ -1,0 +1,39 @@
+/* WishListPage.css */
+
+/* Styles for the entire wishlist page */
+div {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the product list */
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap into multiple rows */
+    justify-content: space-between; /* Distribute items evenly */
+  }
+  
+  li {
+    width: calc(33.33% - 10px); /* Three products per row with spacing */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  li img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  li p {
+    margin: 10px 0;
+  }
+  
+  /* You can add more specific styles as needed */
+  

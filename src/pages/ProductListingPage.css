@@ -1,0 +1,74 @@
+/* ProductListingPage.css */
+
+.product-listing-page {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.product-list {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap into multiple rows */
+  justify-content: space-between; /* Distribute items evenly */
+}
+
+.product-count {
+  font-size: 24px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  width: 100%; /* Ensure the product count takes the full width */
+  text-align: center; /* Center-align the product count */
+}
+
+.product-item {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-item h2 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.product-item p {
+  margin: 10px 0;
+}
+
+.wishlist-icon {
+  position: absolute;
+  top: 10px; /* Adjust the top positioning as needed */
+  right: 10px; /* Adjust the right positioning as needed */
+  cursor: pointer;
+  color: #ff0000; /* Color of the heart icon */
+  z-index: 1; /* Ensure the icon is above other content */
+  font-size: 24px; /* Adjust the icon size as needed */
+}
+.product-item {
+  position: relative; /* Set parent element to relative position */
+}
+
+.cart-icon-container {
+  position: absolute;
+  bottom: 50%; /* Align to the middle of the parent */
+  right: 0;
+  transform: translateY(50%); /* Adjust for half the icon's height */
+  margin-right: 10px; /* Add margin to the right */
+}
+
+.cart-icon {
+  font-size: 24px;
+  color: green; /* Customize the icon color */
+}
